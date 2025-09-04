@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b, c, d;
+    cout << "Enter four numbers: ";
+    cin >> a >> b >> c >> d;
+
+    if (a >= b && a >= c && a >= d)
+        cout << "Maximum is: " << a;
+    else if (b >= a && b >= c && b >= d)
+        cout << "Maximum is: " << b;
+    else if (c >= a && c >= b && c >= d)
+        cout << "Maximum is: " << c;
+    else
+        cout << "Maximum is: " << d;
+
+    return 0;
+}

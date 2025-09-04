@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b, c, d;
+    cout << "Enter four numbers: ";
+    cin >> a >> b >> c >> d;
+
+    int max;
+
+    if (a > b && a > c && a > d)
+        max = a;
+    else if (b > c && b > d)
+        max = b;
+    else if (c > d)
+        max = c;
+    else
+        max = d;
+
+    cout << "Maximum is: " << max;
+    return 0;
+}
