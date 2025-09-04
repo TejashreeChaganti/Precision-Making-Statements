@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b, c;
+    cout << "Enter three numbers: ";
+    cin >> a >> b >> c;
+
+    if (a <= b && a <= c)
+        cout << "Minimum is: " << a;
+    else if (b <= a && b <= c)
+        cout << "Minimum is: " << b;
+    else
+        cout << "Minimum is: " << c;
+
+    return 0;
+}
