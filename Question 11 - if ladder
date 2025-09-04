@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int choice;
+    float base, height;
+    cout << "Enter 2 to calculate area of triangle: ";
+    cin >> choice;
+
+    if (choice == 1)
+        cout << "Option 1 not implemented." << endl;
+    else if (choice == 2) {
+        cout << "Enter base and height: ";
+        cin >> base >> height;
+        float area = 0.5 * base * height;
+        cout << "Area of triangle: " << area << endl;
+    } else if (choice == 3)
+        cout << "Option 3 not implemented." << endl;
+    else
+        cout << "Invalid input." << endl;
+
+    return 0;
+}
