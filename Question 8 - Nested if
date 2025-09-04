@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num;
+    cout << "Enter a number: ";
+    cin >> num;
+
+    int absNum = abs(num);
+    if (absNum >= 1000 && absNum <= 9999) {
+        int d1 = absNum / 1000;
+        int d2 = (absNum / 100) % 10;
+        int d3 = (absNum / 10) % 10;
+        int d4 = absNum % 10;
+
+        int sum12 = d1 + d2;
+        int sum34 = d3 + d4;
+        int totalSum = d1 + d2 + d3 + d4;
+
+        if (sum12 > sum34) {
+            if (totalSum % 2 == 0) {
+                if (totalSum <= 9) {
+                    cout << "All conditions satisfied." << endl;
+                } else {
+                    cout << "Sum of digits is not single-digit." << endl;
+                }
+            } else {
+                cout << "Sum of digits is not even." << endl;
+            }
+        } else {
+            cout << "Sum of first two digits is not greater than last two." << endl;
+        }
+    } else {
+        cout << "Not a 4-digit number." << endl;
+    }
+
+    return 0;
+}
