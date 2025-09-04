@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b, sticks;
+    cout << "Enter two numbers: ";
+    cin >> a >> b;
+    cout << "Enter number of sticks (1-4): ";
+    cin >> sticks;
+
+    if (sticks == 1)
+        cout << "Addition: " << a + b << endl;
+    else if (sticks == 2)
+        cout << "Subtraction: " << a - b << endl;
+    else if (sticks == 3)
+        cout << "Multiplication: " << a * b << endl;
+    else if (sticks == 4)
+        if (b != 0)
+            cout << "Division: " << a / b << endl;
+        else
+            cout << "Cannot divide by zero." << endl;
+    else
+        cout << "Invalid number of sticks." << endl;
+
+    return 0;
+}
