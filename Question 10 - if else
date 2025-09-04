@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int choice;
+	float radius;
+	cout << "Enter 1 to calculate area of circle: ";
+	cin >> choice;
+
+	if (choice == 1) {
+		cout << "Enter radius: ";
+		cin >> radius;
+		float area = 3.1416 * radius * radius;
+		cout << "Area of circle: " << area << endl;
+	} else {
+		cout << "Invalid input." << endl;
+	}
+
+	return 0;
+}
