@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int choice;
+    float length, breadth;
+    cout << "Enter 3 to calculate area of rectangle: ";
+    cin >> choice;
+
+    if (choice >= 1) {
+        if (choice == 3) {
+            cout << "Enter length and breadth: ";
+            cin >> length >> breadth;
+            cout << "Area of rectangle: " << length * breadth << endl;
+        } else {
+            cout << "Invalid option inside nested if." << endl;
+        }
+    } else {
+        cout << "Invalid input." << endl;
+    }
+
+    return 0;
+}
