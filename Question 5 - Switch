@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b, choice;
+    cout << "Enter two numbers: ";
+    cin >> a >> b;
+
+    cout << "Enter your choice (1 for Maximum, 2 for Minimum): ";
+    cin >> choice;
+
+    switch (choice) {
+        case 1:
+            cout << "Maximum is: " << (a > b ? a : b);
+            break;
+        case 2:
+            cout << "Minimum is: " << (a < b ? a : b);
+            break;
+        default:
+            cout << "Invalid choice.";
+    }
+
+    return 0;
+}

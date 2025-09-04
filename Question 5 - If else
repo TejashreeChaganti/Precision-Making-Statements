@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b, choice;
+    cout << "Enter two numbers: ";
+    cin >> a >> b;
+
+    cout << "Enter your choice (1 for Maximum, 2 for Minimum): ";
+    cin >> choice;
+
+    if (choice == 1) {
+        if (a > b)
+            cout << "Maximum is: " << a;
+        else
+            cout << "Maximum is: " << b;
+    } else {
+        if (a < b)
+            cout << "Minimum is: " << a;
+        else
+            cout << "Minimum is: " << b;
+    }
+
+    return 0;
+}
